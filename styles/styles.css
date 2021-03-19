@@ -1,0 +1,73 @@
+body {
+  padding: 0;
+  margin: 0;
+  color: #000000;
+  font-family: 'Montserrat';
+  font-size: 20px;
+  background: #E5E5E5;
+}
+nav {
+  display: flex;
+  align-items: center;
+}
+header {
+  width: 100%;
+  height: 117px;
+  background: #2B4570;
+  margin: 0;
+  display: flex;
+  align-items: center;
+}
+header #LogoAndText {
+  display: flex;
+  align-items: center;
+}
+header #LogoAndText .LogoText {
+  margin-left: 1%;
+  height: 44px;
+}
+header #LogoAndText .LogoText #LogoName {
+  width: 198px;
+  height: 31px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 49px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.16em;
+  color: #F46036;
+}
+header #LogoAndText .LogoText #LogoDescription {
+  width: 198px;
+  height: 13px;
+  padding: 5px 2px;
+  display: flex;
+  align-items: center;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+  color: #F46036;
+}
+header .menu {
+  list-style-type: none;
+  display: flex;
+  margin-left: auto;
+}
+header .menu li {
+  display: block;
+  text-align: center;
+  padding: 0;
+  margin-right: 30px;
+}
+header .menu li a {
+  text-decoration: none;
+  color: #F2F4F3;
+}
+header .menu .LastLi {
+  margin-right: 0 !important;
+}
+/*# sourceMappingURL=styles.css.map */
