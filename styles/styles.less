@@ -4,6 +4,7 @@ body{
   margin: 0;
   color: #000000;
   font-family: 'Montserrat';
+  font-style: normal;
   font-size: 20px;
   background: #E5E5E5;
 }
@@ -467,69 +468,104 @@ header {
 
 .Form{
   min-height: 419px;
+  margin-top: 0px;
   background: url('../img/Form`s-BG.jpg') no-repeat center top / cover;
+}
+.form{
+  display: flex;
+  padding-top: 68px;
+  padding-bottom: 68px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.inForm {
+  display: flex;
+  //padding-top: 68px;
+  //justify-content: space-between;
+  flex-direction: column;
+
+}
+.textForm{
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+.inputElem{
+  display: flex;
+  flex-direction: column;
+  //flex-wrap: wrap;
+  justify-content: space-between;
+  width: 40%;
+}
+.inputs{
+  //margin-right: 30px;
+}
+.inForm input{
+  /*display: block;*/
   display: flex;
   align-items: center;
-
+  width: 95%;
+  height: 80px;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+  background: rgba(120, 139, 255, 0.9);
+  border: 2px solid #0F316A;
+  box-sizing: border-box;
+  border-radius: 15px;
+  font-size: 20px;
+  font-weight: normal;
+  line-height: 120%;
+  letter-spacing: 0.1em;
+  font-variant: small-caps;
+  color: black;
+  -webkit-text-fill-color: black;
+  font-family: 'Montserrat';
+}
+.inForm textarea {
+  padding-top: 10px;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+  -webkit-text-fill-color: black;
+  color: black;
+  width: 60%;
+  background: rgba(120, 139, 255, 0.9);
+  border: 2px solid #0F316A;
+  box-sizing: border-box;
+  border-radius: 15px;
+  font-size: 20px;
+  font-weight: normal;
+  line-height: 120%;
+  letter-spacing: 0.1em;
+  font-variant: small-caps;
+  font-family: 'Montserrat';
 }
 
-.InputData{
-  display: flex;
-  justify-content: center;
-  .FirstColumn{
-    display: flex;
-    flex-direction: column;
-    input{
-      margin-bottom: 5%;
-      width: 361px;
-      height: 80.42px;
-      background: rgba(120, 139, 255, 0.85);
-      border: 2px solid #0F316A;
-      box-sizing: border-box;
-      border-radius: 15px;
-    }
-  }
-  .SecondColumn{
-    margin-left: 2%;
-    input{
-      display: flex;
-      align-content: flex-start;
-
-      width: 720px;
-      height: 187px;
-      background: rgba(120, 139, 255, 0.9);
-      border: 2px solid #0F316A;
-      box-sizing: border-box;
-      border-radius: 15px;
-      textarea{
-        font-family: Montserrat;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 20px;
-        line-height: 120%;
-        display: flex;
-        align-items: center;
-        letter-spacing: 0.1em;
-        font-variant: small-caps;
-        color: #000000;
-      }
-    }
-
-  }
+.inForm input[type="submit"] {
+  display: block;
+  margin-top: 44px;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+  text-align: center;
+  align-items: center;
+  color: #FFFFFF;
+  -webkit-text-fill-color: white;
+  text-decoration: none;
+  font-weight: bold;
+  width: 255px;
+  height: 53px;
+  background: #2B4570;
+  box-shadow: 0px 9px 35px rgba(43, 69, 112, 0.56);
+  border-radius: 15px;
+  align-self: flex-end;
 }
-
-.SecondRow{
+.inForm textarea {
+  resize: none;
+}
+.buttonEnter{
   display: flex;
   justify-content: flex-end;
-  .Button{
-
-    width: 255px;
-    height: 53px;
-    background: #2B4570;
-    box-shadow: 0px 9px 35px rgba(43, 69, 112, 0.56);
-    border-radius: 15px;
-    text-align: center;
-  }
 }
 
 footer{
@@ -613,4 +649,119 @@ footer{
 .forCopyright{
   display: flex;
   align-items: flex-end;
+}
+
+.ServicesTechnics{
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+}
+
+.ServicesContent{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 2559px;
+}
+
+.MainHeadText{
+  align-self: center;
+  font-weight: 800;
+  font-size: 48px;
+  line-height: 59px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.1em;
+  margin-top: 6%;
+  margin-bottom: 1%;
+  color: #F46036;
+}
+
+.UnderHeadText{
+  display: flex;
+  font-size: 26px;
+  line-height: 32px;
+  text-align: justify;
+  letter-spacing: 0.09em;
+  margin-bottom: 3%;
+  padding: 0;
+  color: #000000;
+}
+
+.WrapDiv{
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+  list-style: none;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -moz-flex;
+  display: -webkit-flex;
+  display: flex;
+  justify-content: center;
+}
+
+.TechnicBox{
+  margin-right: 2%;
+  margin-bottom: 2%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #C4C4C4;
+  border-radius: 10px;
+  width: 355px;
+  height: 467px;
+  img {
+    margin-top: 20%;
+    background-blend-mode: darken;
+    filter: drop-shadow(0px 0px 35px rgba(0, 0, 0, 0.25));
+    border-radius: 10px;
+  }
+  a{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 23px;
+    line-height: 120%;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.1em;
+    text-align: left;
+    color: #000000;
+    text-decoration: none;
+  }
+}
+.WrapDiv div:nth-child(3n){
+  margin-right: 0;
+}
+
+.WrapDiv div:nth-child(n+9){
+  margin-bottom: 0;
+}
+
+.TextBox{
+  display: flex;
+  width: 245px;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.SimpleText {
+  font-size: 20px;
+  line-height: 154%;
+  font-variant: small-caps;
+  margin: 0;
+  padding: 0;
+}
+.BoldText{
+  font-size: 23px;
+  line-height: 120%;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.1em;
+  text-align: left;
 }
