@@ -1,4 +1,4 @@
-body{
+body {
   width: 100%;
   padding: 0;
   margin: 0;
@@ -10,22 +10,22 @@ body{
   background: #E5E5E5;
 }
 
-nav{
+nav {
   display: flex;
   align-items: center;
 }
 
-.LogoAndText{
+.LogoAndText {
   display: flex;
   align-items: center;
+
   .LogoText {
     margin-left: 1%;
     height: 44px;
+
     .LogoName {
       width: 198px;
       height: 31px;
-      font-family: Montserrat;
-      font-style: normal;
       font-weight: bold;
       font-size: 40px;
       line-height: 49px;
@@ -36,20 +36,23 @@ nav{
       color: #F46036;
     }
 
-    .LogoDescription{
+    .LogoDescription {
       width: 198px;
       height: 13px;
       padding: 5px 2px;
       display: flex;
       align-items: center;
-      font-family: Montserrat;
-      font-style: normal;
       font-weight: 500;
       font-size: 12px;
       line-height: 15px;
       color: #F46036;
     }
   }
+}
+
+.BurgerMenu {
+  display: none;
+  margin-left: auto;
 }
 
 header {
@@ -59,81 +62,43 @@ header {
   display: flex;
   align-items: center;
 
-
-  .LogoAndText{
-    display: flex;
-    align-items: center;
-    .LogoText {
-      margin-left: 1%;
-      height: 44px;
-      .LogoName {
-        width: 198px;
-        height: 31px;
-        font-family: Montserrat;
-        font-style: normal;
-        font-weight: bold;
-        font-size: 40px;
-        line-height: 49px;
-        display: flex;
-        align-items: center;
-        letter-spacing: 0.16em;
-
-        color: #F46036;
-      }
-
-      .LogoDescription{
-        width: 198px;
-        height: 13px;
-        padding: 5px 2px;
-        display: flex;
-        align-items: center;
-        font-family: Montserrat;
-        font-style: normal;
-        font-weight: 500;
-        font-size: 12px;
-        line-height: 15px;
-        color: #F46036;
-      }
-    }
-  }
-  .menu{
+  .menu {
     list-style-type: none;
     display: flex;
     margin-left: auto;
-    li{
+    li {
       display: block;
       text-align: center;
       padding: 0;
-
       margin-right: 30px;
-      a{
+      a {
         text-decoration: none;
         color: #F2F4F3;
       }
     }
-
-    .LastLi{
-      margin-right: 0 !important;
-    }
-
+  }
+  .menu li:nth-child(4){
+    margin-right: 0;
   }
 }
 
-.FirstPart{
+.FirstPart {
   display: flex;
   align-items: center;
-  min-height: 645px;
+  height: 645px;
   background: url('../img/fpbg.png') no-repeat center top / cover;
 
 }
-.Introduction{
+
+.Introduction {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 594px;
   height: 444px;
   background: linear-gradient(119.24deg, rgba(242, 244, 243, 0.75) 1.05%, rgba(242, 244, 243, 0.105) 102.17%);
-  box-shadow: 0px 9px 35px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 9px 35px rgba(0, 0, 0, 0.25);
+
   .Slogan {
     h1 {
       width: 487px;
@@ -141,51 +106,49 @@ header {
       background: -webkit-linear-gradient(90deg, #F46036 100%, #E9473D 100%);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
-      font-family: Montserrat;
-      font-style: normal;
       font-weight: 800;
       font-size: 48px;
       line-height: 105%;
       letter-spacing: 0.1em;
       font-variant: small-caps;
     }
-    p{
+
+    p {
       width: 505px;
-      font-family: Montserrat;
-      font-style: normal;
       font-weight: 500;
       font-size: 22px;
       line-height: 140.9%;
       letter-spacing: 0.105em;
       color: #0B2146;
+      margin: 5% 0 0;
     }
   }
 }
 
-.FirstContent{
+.FirstContent {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.hammer{
+
+.hammer {
   width: 401px;
   height: 382px;
 }
 
-.SecondPart{
+.SecondPart {
   min-height: 860px;
   display: flex;
   align-items: center;
 }
 
-.SecondContent{
+.SecondContent {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  h2{
+
+  h2 {
     align-self: center;
-    font-family: Montserrat;
-    font-style: normal;
     font-weight: 800;
     font-size: 36px;
     line-height: 120%;
@@ -198,9 +161,12 @@ header {
 
     color: #F46036;
   }
-  .TechnicsTypes{
-    .WrapUl{
-      padding-left: 0px;
+
+  .TechnicsTypes {
+    display: flex;
+    justify-content: center;
+    .WrapUl {
+      padding-left: 0;
       -webkit-flex-wrap: wrap;
       flex-wrap: wrap;
       list-style: none;
@@ -211,47 +177,43 @@ header {
       display: -webkit-flex;
       display: flex;
       justify-content: center;
+
       li {
         display: flex;
         align-content: center;
         margin-right: 1.5%;
         margin-top: 1%;
       }
-      .LastTechnicLi {
+
+      .BaseAlign {
         display: flex;
         align-content: center;
-        margin-right: 0%;
-        margin-top: 1%;
-      }
-        .BaseAlign {
+        flex-direction: column;
+        background: #C4C4C4;
+        border-radius: 10px;
+        width: 170px;
+        height: 218px;
+
+        img {
           display: flex;
-          align-content: center;
-          flex-direction: column;
-          background: #C4C4C4;
-          border-radius: 10px;
-          width: 170px;
-          height: 218px;
-          img {
-            display: flex;
-            align-self: center;
-            margin-top: 20%;
-          }
-          p {
-            text-align: center;
-          }
+          align-self: center;
+          margin-top: 20%;
         }
 
-
-
+        p {
+          text-align: center;
+        }
+      }
 
     }
   }
 
-  .HelpLine{
+  .TechnicsTypes li:nth-child(6n){
+    margin-right: 0;
+  }
+
+  .HelpLine {
     margin-top: 2%;
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: normal;
     font-size: 26px;
     line-height: 120%;
     display: flex;
@@ -261,25 +223,24 @@ header {
   }
 }
 
-.ThirdPart{
+.ThirdPart {
   min-height: 836px;
   background: url('../img/steelbg.jpg') no-repeat center top / cover;
   display: flex;
   align-items: center;
 }
 
-.ThirdContent{
+.ThirdContent {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  h2{
+
+  h2 {
     align-self: center;
-    font-family: Montserrat;
-    font-style: normal;
     font-weight: 800;
     font-size: 36px;
     line-height: 120%;
-    margin-top: 0%;
+    margin-top: 0;
     margin-bottom: 1%;
 
     display: flex;
@@ -290,81 +251,86 @@ header {
 
     color: #F46036;
   }
-  .Advantages{
+}
+
+.Advantages {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  .SimpleAdvantage {
+    margin-top: 3%;
+    display: flex;
+    align-items: center;
+  }
+
+  .IconAdvantage {
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
-    .SimpleAdvantage{
-      margin-top: 3%;
-      display: flex;
+    margin-right: 2%;
+    width: 130px;
+    height: 130px;
+    background: rgba(120, 139, 255, 0.4);
+    border-radius: 100%;
+    img {
+      align-self: center;
     }
-    .IconAdvantage{
+  }
+
+  .TextAdvantage {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 991px;
+    height: 130px;
+    background: rgba(120, 139, 255, 0.43);
+    border-radius: 25px;
+
+    .HeaderText {
+      font-weight: bold;
+      font-size: 22px;
+      line-height: 120%;
+      margin-top: 1%;
+      margin-left: 1%;
+      margin-bottom: 1%;
+
       display: flex;
-      justify-content: center;
-      margin-right: 2%;
-      width: 130px;
-      height: 130px;
-      background: rgba(120, 139, 255, 0.4);
-      border-radius: 100%;
-      img{
-        align-self: center;
-      }
+      align-items: center;
+      letter-spacing: 0.1em;
+      font-variant: small-caps;
     }
-    .TextAdvantage{
-      width: 991px;
-      height: 130px;
-      background: rgba(120, 139, 255, 0.43);
-      border-radius: 25px;
-      .HeaderText{
-        font-family: Montserrat;
-        font-style: normal;
-        font-weight: bold;
-        font-size: 22px;
-        line-height: 120%;
-        margin-top: 1%;
-        margin-left: 1%;
-        margin-bottom: 1%;
 
-        display: flex;
-        align-items: center;
-        letter-spacing: 0.1em;
-        font-variant: small-caps;
-      }
-      .SecondText{
-        font-family: Montserrat;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 20px;
-        line-height: 120%;
-        margin-top: 1%;
-        margin-left: 1%;
-        margin-bottom: 1%;
-        display: flex;
-        align-items: center;
-        letter-spacing: 0.1em;
-        font-variant: small-caps;
+    .SecondText {
+      font-size: 20px;
+      line-height: 120%;
+      margin-top: 1%;
+      margin-left: 1%;
+      margin-bottom: 1%;
+      display: flex;
+      align-items: center;
+      letter-spacing: 0.1em;
+      font-variant: small-caps;
 
-        color: #000000;
+      color: #000000;
 
-      }
     }
   }
 }
 
-.FourthPart{
+.FourthPart {
   min-height: 668px;
   display: flex;
   align-items: center;
 }
 
-.FourthContent{
+.FourthContent {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  h2{
+
+  h2 {
     align-self: center;
-    font-family: Montserrat;
-    font-style: normal;
     font-weight: 800;
     font-size: 36px;
     line-height: 120%;
@@ -376,10 +342,21 @@ header {
 
     color: #F46036;
   }
-  .PartnersText{
-    font-family: Montserrat;
+
+  .AgeText{
+    font-size: 20px;
+    line-height: 120%;
+    display: flex;
+    align-items: center;
+    text-align: justify;
+    letter-spacing: 0.1em;
+    font-variant: small-caps;
+
+    color: #000000;
+  }
+
+  .PartnersText {
     align-self: center;
-    font-style: normal;
     font-weight: bold;
     font-size: 22px;
     line-height: 120%;
@@ -391,15 +368,18 @@ header {
 
     color: #000000;
   }
-  .ScrollPane{
+
+  .ScrollPane {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     margin-top: 3%;
-    #LeftScroller{
+
+    #LeftScroller {
       margin-right: 2%;
     }
-    .CompanyIcon{
+
+    .CompanyIcon {
       width: 150px;
       height: 150px;
       display: flex;
@@ -407,38 +387,45 @@ header {
       margin-right: 2%;
       background: rgba(120, 139, 255, 0.4);
       border-radius: 100%;
-      img{
+
+      img {
         align-self: center;
       }
     }
-    }
-  .ScrollCircles{
+  }
+
+  .ScrollCircles {
     display: flex;
     align-self: center;
     margin-top: 3%;
-    .FirstScrollCircle{
-      display: flex;
-      margin-right: 1%;
+    .ScrollCircle {
+      fill: #E5E5E5;
     }
   }
+  .ScrollCircles .ScrollCircle:nth-child(1){
+    fill: #2B4570;
+  }
+
+  .ScrollCircles .ScrollCircle:nth-child(n+3){
+    display: none;
+  }
+
 }
 
-.FifthPart{
+.FifthPart {
   min-height: 205px;
   background: #2B4570;
   display: flex;
   align-items: center;
 }
 
-.FifthContent{
+.FifthContent {
   display: flex;
   flex-direction: column;
   justify-content: center;
 
-  h2{
+  h2 {
     align-self: center;
-    font-family: Montserrat;
-    font-style: normal;
     font-weight: 800;
     font-size: 36px;
     line-height: 120%;
@@ -451,9 +438,7 @@ header {
     margin-bottom: 1%;
   }
 
-  .WhiteOnBlueText{
-    font-family: Montserrat;
-    font-style: normal;
+  .WhiteOnBlueText {
     font-weight: bold;
     font-size: 22px;
     line-height: 120%;
@@ -467,44 +452,39 @@ header {
   }
 }
 
-.Form{
+.Form {
   min-height: 419px;
-  margin-top: 0px;
+  margin-top: 0;
   background: url('../img/Form`s-BG.jpg') no-repeat center top / cover;
 }
-.form{
+
+.form {
   display: flex;
-  padding-top: 68px;
-  padding-bottom: 68px;
-  display: flex;
+  padding-top: 9%;
+  padding-bottom: 9%;
   flex-direction: column;
   justify-content: center;
 }
 
 .inForm {
   display: flex;
-  //padding-top: 68px;
-  //justify-content: space-between;
   flex-direction: column;
-
 }
-.textForm{
+
+.textForm {
   display: flex;
   justify-content: space-between;
   flex-direction: row;
 }
-.inputElem{
+
+.inputElem {
   display: flex;
   flex-direction: column;
-  //flex-wrap: wrap;
   justify-content: space-between;
   width: 40%;
 }
-.inputs{
-  //margin-right: 30px;
-}
-.inForm input{
-  /*display: block;*/
+
+.inForm input {
   display: flex;
   align-items: center;
   width: 95%;
@@ -516,7 +496,6 @@ header {
   box-sizing: border-box;
   border-radius: 15px;
   font-size: 20px;
-  font-weight: normal;
   line-height: 120%;
   letter-spacing: 0.1em;
   font-variant: small-caps;
@@ -524,10 +503,11 @@ header {
   -webkit-text-fill-color: black;
   font-family: 'Montserrat';
 }
+
 .inForm textarea {
   padding-top: 10px;
-  margin-bottom: 0px;
-  padding-bottom: 0px;
+  margin-bottom: 0;
+  padding-bottom: 0;
   -webkit-text-fill-color: black;
   color: black;
   width: 60%;
@@ -536,7 +516,6 @@ header {
   box-sizing: border-box;
   border-radius: 15px;
   font-size: 20px;
-  font-weight: normal;
   line-height: 120%;
   letter-spacing: 0.1em;
   font-variant: small-caps;
@@ -546,8 +525,8 @@ header {
 .inForm input[type="submit"] {
   display: block;
   margin-top: 44px;
-  margin-bottom: 0px;
-  padding-bottom: 0px;
+  margin-bottom: 0;
+  padding-bottom: 0;
   text-align: center;
   align-items: center;
   color: #FFFFFF;
@@ -561,15 +540,17 @@ header {
   border-radius: 15px;
   align-self: flex-end;
 }
+
 .inForm textarea {
   resize: none;
 }
-.buttonEnter{
+
+.buttonEnter {
   display: flex;
   justify-content: flex-end;
 }
 
-footer{
+footer {
   min-height: 218px;
   background: #2B4570;
   display: flex;
@@ -577,23 +558,25 @@ footer{
   justify-content: space-between;
 }
 
-.FooterContent{
+.FooterContent {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
 }
 
-.FirstFooterColumn{
+.FirstFooterColumn {
   display: flex;
   flex-direction: column;
   align-items: stretch;
   height: 106px;
-  .Copyright{
+
+  .Copyright {
     display: flex;
     flex-direction: row;
     margin-top: 11%;
     align-self: flex-end;
-    p{
+
+    p {
       font-family: Montserrat;
       font-style: normal;
       font-weight: normal;
@@ -607,10 +590,11 @@ footer{
   }
 }
 
-.FooterColumnName{
+.FooterColumnName {
   margin-top: 0;
   margin-bottom: 1%;
-  p{
+
+  p {
     font-family: Montserrat;
     font-style: normal;
     font-weight: normal;
@@ -624,8 +608,8 @@ footer{
   }
 }
 
-.FooterColumnContent{
-  p{
+.FooterColumnContent {
+  p {
     font-family: Montserrat;
     font-style: normal;
     font-weight: normal;
@@ -640,32 +624,31 @@ footer{
   }
 }
 
-.SecondFooterColumn{
+.SecondFooterColumn {
   display: flex;
   flex-direction: column;
   align-items: start;
-  //width: 23%;
-
 }
-.forCopyright{
+
+.forCopyright {
   display: flex;
   align-items: flex-end;
 }
 
-.ServicesTechnics{
+.ServicesTechnics {
   font-family: Montserrat;
   font-style: normal;
   font-weight: normal;
 }
 
-.ServicesContent{
+.ServicesContent {
   display: flex;
   flex-direction: column;
   align-items: center;
   min-height: 2559px;
 }
 
-.MainHeadText{
+.MainHeadText {
   align-self: center;
   font-weight: 800;
   font-size: 48px;
@@ -679,7 +662,7 @@ footer{
   color: #F46036;
 }
 
-.UnderHeadText{
+.UnderHeadText {
   display: flex;
   font-size: 26px;
   line-height: 32px;
@@ -690,7 +673,7 @@ footer{
   color: #000000;
 }
 
-.WrapDiv{
+.WrapDiv {
   -webkit-flex-wrap: wrap;
   flex-wrap: wrap;
   list-style: none;
@@ -703,7 +686,7 @@ footer{
   justify-content: center;
 }
 
-.TechnicBox{
+.TechnicBox {
   margin-right: 2%;
   margin-bottom: 2%;
   display: flex;
@@ -714,13 +697,15 @@ footer{
   border-radius: 10px;
   width: 355px;
   height: 467px;
+
   img {
     margin-top: 20%;
     background-blend-mode: darken;
     filter: drop-shadow(0px 0px 35px rgba(0, 0, 0, 0.25));
     border-radius: 10px;
   }
-  a{
+
+  a {
     font-family: Montserrat;
     font-style: normal;
     font-size: 23px;
@@ -733,15 +718,16 @@ footer{
     text-decoration: none;
   }
 }
-.WrapDiv div:nth-child(3n){
+
+.WrapDiv div:nth-child(3n) {
   margin-right: 0;
 }
 
-.WrapDiv div:nth-child(n+9){
+.WrapDiv div:nth-child(n+9) {
   margin-bottom: 0;
 }
 
-.TextBox{
+.TextBox {
   display: flex;
   width: 245px;
   align-items: flex-start;
@@ -755,7 +741,8 @@ footer{
   margin: 0;
   padding: 0;
 }
-.BoldText{
+
+.BoldText {
   font-size: 23px;
   line-height: 120%;
   font-weight: bold;
@@ -765,23 +752,24 @@ footer{
   text-align: left;
 }
 
-.FirstInfoPart{
-    min-height: 761px;
-    display: flex;
-    align-items: center;
+.FirstInfoPart {
+  min-height: 761px;
+  display: flex;
+  align-items: center;
 }
 
-.FirstInfoContent{
+.FirstInfoContent {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  .MainHeadText{
+
+  .MainHeadText {
     margin-top: 0;
     margin-bottom: 5%;
   }
 }
 
-.InfoBG{
+.InfoBG {
   width: 470px;
   height: 404px;
   filter: drop-shadow(0px 0px 35px rgba(0, 0, 0, 0.25));
@@ -789,7 +777,7 @@ footer{
   margin-bottom: 6%;
 }
 
-.InfoIntro{
+.InfoIntro {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -799,7 +787,7 @@ footer{
   border-radius: 10px;
 }
 
-.BoldInfoText{
+.BoldInfoText {
   margin: 0;
   padding: 0;
   font-weight: bold;
@@ -809,7 +797,7 @@ footer{
   color: #000000;
 }
 
-.SimpleInfoText{
+.SimpleInfoText {
   padding: 0;
   font-size: 22px;
   line-height: 27px;
@@ -818,28 +806,29 @@ footer{
   margin: 0 0 5%;
 }
 
-.InfoIntro p.SimpleInfoText:nth-last-child(1){
+.InfoIntro p.SimpleInfoText:nth-last-child(1) {
   margin-bottom: 0;
 }
 
-.InfoButtonCont{
+.InfoButtonCont {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   margin-right: 10%;
-  a{
+
+  a {
     text-decoration: none;
   }
 }
 
-.InfoIntroText{
+.InfoIntroText {
   display: flex;
   width: 420px;
   align-items: flex-start;
   flex-direction: column;
 }
 
-.InfoButton{
+.InfoButton {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -850,7 +839,7 @@ footer{
   border-radius: 15px;
 }
 
-.InfoWhiteText{
+.InfoWhiteText {
   font-weight: bold;
   font-size: 20px;
   line-height: 120%;
@@ -861,14 +850,14 @@ footer{
   color: #FFFFFF;
 }
 
-.SecondInfoPart{
+.SecondInfoPart {
   min-height: 707px;
   display: flex;
   align-items: center;
   background: url('../img/informationaltv/infoBG1.png') no-repeat center top / cover;
 }
 
-.SecondInfoContent{
+.SecondInfoContent {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -876,7 +865,7 @@ footer{
   background: rgba(255, 255, 255, 0.75);
 }
 
-.SecondInfoBox{
+.SecondInfoBox {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -884,7 +873,7 @@ footer{
   width: 654px;
 }
 
-.SecondInfoTextBox{
+.SecondInfoTextBox {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -892,7 +881,7 @@ footer{
   width: 454px;
 }
 
-.InfoOrangeText{
+.InfoOrangeText {
   font-weight: bold;
   font-size: 25px;
   line-height: 30px;
@@ -900,25 +889,25 @@ footer{
   color: #F46036;
 }
 
-.InfoSimpleText{
+.InfoSimpleText {
   font-size: 21px;
   line-height: 28px;
   text-align: justify;
   color: #000000;
 }
 
-.ThirdInfoPart{
+.ThirdInfoPart {
   min-height: 900px;
   display: flex;
   align-items: center;
 }
 
-.ThirdInfoContent{
+.ThirdInfoContent {
   display: flex;
   justify-content: space-between;
 }
 
-.InfoSmallText{
+.InfoSmallText {
   font-weight: bold;
   font-size: 36px;
   line-height: 44px;
@@ -928,15 +917,18 @@ footer{
   margin-bottom: 4%;
 }
 
-.ThirdInfoColumn{
+.ThirdInfoColumn {
   display: flex;
   flex-direction: column;
-  .InfoIntro{
+
+  .InfoIntro {
     height: 440px;
     width: 680px;
-    .InfoIntroText{
+
+    .InfoIntroText {
       width: 610px;
-      .SimpleInfoText{
+
+      .SimpleInfoText {
         font-size: 24px;
         line-height: 29px;
         text-align: justify;
@@ -945,9 +937,11 @@ footer{
       }
     }
   }
-  .InfoIntroText{
+
+  .InfoIntroText {
     width: 680px;
-    .InfoOrangeText{
+
+    .InfoOrangeText {
       font-size: 25px;
       line-height: 30px;
       text-align: justify;
@@ -955,7 +949,8 @@ footer{
       margin-bottom: 1%;
       margin-top: 6%;
     }
-    .BoldInfoText{
+
+    .BoldInfoText {
       font-size: 20px;
       line-height: 24px;
       text-align: justify;
@@ -964,7 +959,7 @@ footer{
   }
 }
 
-.FirstInfoImg{
+.FirstInfoImg {
   display: flex;
   align-self: flex-end;
   width: 370px;
@@ -972,10 +967,1307 @@ footer{
   margin-bottom: 17%;
 }
 
-.SecondInfoImg{
+.SecondInfoImg {
 
   display: flex;
   align-self: flex-end;
   width: 240px;
   height: 252px;
+}
+
+.Scrollers{
+  display: none;
+}
+
+
+@media screen and (max-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .container {
+    max-width: 960px;
+  }
+
+  .FirstPart{
+    height: 600px;
+  }
+  .Introduction {
+    width: 500px;
+    height: 400px;
+    .Slogan {
+      h1 {
+        width: 410px;
+        font-weight: 800;
+        font-size: 44px;
+      }
+      p {
+        width: 410px;
+        font-weight: 500;
+        font-size: 20px;
+      }
+    }
+  }
+  .hammer {
+    width: 360px;
+    height: 340px;
+    img{
+      width: 360px;
+      height: 340px;
+    }
+  }
+
+  .SecondPart {
+    min-height: 1000px;
+  }
+  .SecondContent {
+    h2 {
+      font-size: 32px;
+    }
+
+    .TechnicsTypes li:nth-child(5n){
+      margin-right: 0;
+    }
+
+    .TechnicsTypes li:nth-child(6n){
+      margin-right: 1.5%;
+    }
+
+    .HelpLine {
+      font-size: 22px;
+      line-height: 120%;
+    }
+  }
+
+  .ThirdPart {
+    min-height: 780px;
+  }
+  .Advantages {
+    .SimpleAdvantage {
+      .IconAdvantage {
+        display: flex;
+        justify-content: center;
+        margin-right: 2%;
+        width: 90px;
+        height: 90px;
+        background: rgba(120, 139, 255, 0.4);
+        border-radius: 100%;
+        img {
+          align-self: center;
+          height: 50px;
+          width: 50px;
+        }
+      }
+      .TextAdvantage {
+        width: 900px;
+        height: 110px;
+        border-radius: 25px;
+        .HeaderText {
+          font-size: 20px;
+          line-height: 120%;
+        }
+        .SecondText {
+          font-size: 18px;
+          line-height: 120%;
+        }
+      }
+    }
+  }
+
+  .FourthPart {
+    min-height: 608px;
+  }
+  .FourthContent {
+    .AgeText{
+      font-size: 18px;
+    }
+    h2 {
+      font-size: 32px;
+    }
+    .PartnersText {
+      font-size: 20px;
+    }
+    .ScrollPane .CompanyIcon:nth-last-child(-n + 4){
+      display: none;
+    }
+    .ScrollCircles .ScrollCircle:nth-child(n+3){
+      display: flex;
+    }
+    .ScrollCircles .ScrollCircle:nth-child(n+4){
+      display: none;
+    }
+  }
+
+  .FifthPart {
+    min-height: 185px;
+  }
+  .FifthContent {
+    h2 {
+      font-size: 32px;
+    }
+    .WhiteOnBlueText {
+      font-size: 20px;
+      letter-spacing: 0.03em;
+    }
+  }
+
+  .Form {
+    min-height: 380px;
+  }
+  .inputElem {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 50%;
+  }
+  .inForm input {
+    width: 90%;
+    height: 65px;
+    font-size: 18px;
+  }
+  .inForm textarea {
+    font-size: 18px;
+  }
+  .inForm input[type="submit"] {
+    font-size: 20px;
+    width: 235px;
+    height: 47px;
+    font-family: 'Montserrat';
+  }
+
+  footer {
+    min-height: 190px;
+    background: #2B4570;
+  }
+  .FirstFooterColumn {
+
+    .Copyright {
+
+      p {
+        font-size: 14px;
+      }
+    }
+  }
+  .FooterColumnName {
+
+    p {
+      font-size: 16px;
+      line-height: 22px;
+    }
+  }
+  .FooterColumnContent {
+    p {
+      font-size: 16px;
+      line-height: 22px;
+    }
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .container {
+    max-width: 720px;
+  }
+  .LogoAndText {
+    .LogoText {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      height: 44px;
+      .LogoName {
+        font-size: 36px;
+        letter-spacing: 0.11em;
+        height: 29px;
+
+        margin-bottom: 1%;
+      }
+
+      .LogoDescription {
+        margin-top: 1%;
+        width: 198px;
+        height: 13px;
+        padding: 5px 2px;
+        display: flex;
+        align-items: center;
+        font-weight: 500;
+        font-size: 10px;
+        line-height: 15px;
+        color: #F46036;
+      }
+    }
+  }
+  .BurgerMenu {
+    display: none;
+    margin-left: auto;
+  }
+  header {
+    height: 100px;
+    .menu {
+      li {
+        font-size: 15px;
+        margin-right: 13px;
+      }
+    }
+    .menu li:nth-child(4){
+      margin-right: 0;
+    }
+  }
+
+
+  .FirstPart{
+    height: 500px;
+  }
+  .Introduction {
+    width: 410px;
+    height: 350px;
+    .Slogan {
+      h1 {
+        width: 350px;
+        font-weight: 800;
+        font-size: 40px;
+      }
+      p {
+        width: 350px;
+        font-weight: 500;
+        font-size: 18px;
+      }
+    }
+  }
+  .hammer {
+    width: 240px;
+    height: 220px;
+    img{
+      width: 240px;
+      height: 220px;
+    }
+  }
+
+  .SecondPart {
+    min-height: 1170px;
+  }
+  .SecondContent {
+    h2 {
+      font-size: 28px;
+    }
+    .BaseAlign{
+      p{
+        font-size: 18px;
+      }
+    }
+    .TechnicsTypes li:nth-child(5n){
+      margin-right: 1.5%;
+    }
+    .TechnicsTypes li:nth-child(3n){
+      margin-right: 0;
+    }
+    .HelpLine {
+      font-size: 18px;
+      line-height: 120%;
+    }
+  }
+
+  .ThirdPart {
+    min-height: 780px;
+  }
+  .ThirdContent{
+    h2{
+      font-size: 28px;
+    }
+  }
+  .Advantages {
+    .SimpleAdvantage {
+      .IconAdvantage {
+        width: 70px;
+        height: 70px;
+        img {
+          height: 40px;
+          width: 40px;
+        }
+      }
+      .TextAdvantage {
+        width: 600px;
+        height: 130px;
+        border-radius: 25px;
+        .HeaderText {
+          font-size: 18px;
+          line-height: 120%;
+        }
+        .SecondText {
+          font-size: 16px;
+          line-height: 120%;
+        }
+      }
+    }
+  }
+
+  .FourthPart {
+    min-height: 600px;
+  }
+  .FourthContent {
+    .AgeText{
+      font-size: 18px;
+      letter-spacing: 0.05em;
+    }
+    h2 {
+      font-size: 28px;
+    }
+    .PartnersText {
+      font-size: 20px;
+    }
+    .ScrollPane .CompanyIcon:nth-last-child(-n + 4){
+      display: none;
+    }
+    .ScrollCircles .ScrollCircle:nth-child(n+3){
+      display: flex;
+    }
+    .ScrollCircles .ScrollCircle:nth-child(n+4){
+      display: none;
+    }
+  }
+
+  .FifthPart {
+    min-height: 160px;
+  }
+  .FifthContent {
+    h2 {
+      font-size: 28px;
+    }
+    .WhiteOnBlueText {
+      font-size: 18px;
+      letter-spacing: 0.1em;
+    }
+  }
+
+  .Form {
+    min-height: 380px;
+  }
+  .inputElem {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 50%;
+  }
+  .inForm input {
+    width: 90%;
+    height: 65px;
+    font-size: 18px;
+  }
+  .inForm textarea {
+    font-size: 18px;
+  }
+  .inForm input[type="submit"] {
+    font-size: 18px;
+    width: 235px;
+    height: 47px;
+    font-family: 'Montserrat';
+  }
+
+  footer {
+    min-height: 170px;
+    background: #2B4570;
+  }
+  .FirstFooterColumn {
+    .Copyright {
+      p {
+        font-size: 10px;
+      }
+    }
+  }
+  .FooterColumnName {
+    p {
+      font-size: 11px;
+      line-height: 22px;
+    }
+  }
+  .FooterColumnContent {
+    p {
+      font-size: 11px;
+      line-height: 22px;
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .container {
+    max-width: 540px;
+  }
+  .LogoAndText {
+    img{
+      width: 45px;
+      height: 40px;
+    }
+  }
+  .BurgerMenu {
+    display: flex;
+    height: 44px;
+    width: 44px;
+    img{
+      height: 44px;
+      width: 44px;
+    }
+    margin-left: auto;
+  }
+  header {
+    height: 100px;
+    .menu {
+      display: none;
+    }
+  }
+
+  .FirstContent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .Introduction {
+    width: 540px;
+    height: 350px;
+    .Slogan {
+      h1 {
+        width: 460px;
+        font-weight: 800;
+        font-size: 36px;
+      }
+      p {
+        width: 460px;
+        font-weight: 500;
+        font-size: 18px;
+      }
+    }
+  }
+  .hammer {
+    display: none;
+  }
+
+  .SecondPart {
+    min-height: 1630px;
+  }
+  .SecondContent {
+    h2 {
+      font-size: 24px;
+    }
+    .BaseAlign{
+      p{
+        font-size: 16px;
+      }
+    }
+
+    .TechnicsTypes li:nth-child(3n){
+      margin-right: 1.5%;
+    }
+    .TechnicsTypes li:nth-child(2n){
+      margin-right: 0;
+    }
+    .HelpLine {
+      font-size: 18px;
+      line-height: 120%;
+    }
+  }
+
+  .ThirdPart {
+    min-height: 1350px;
+  }
+  .ThirdContent{
+    h2{
+      font-size: 24px;
+    }
+  }
+  .Advantages {
+    .SimpleAdvantage {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      .IconAdvantage {
+        width: 90px;
+        height: 90px;
+        margin-right: 0;
+        margin-bottom: 2%;
+        img {
+          height: 60px;
+          width: 60px;
+        }
+      }
+      .TextAdvantage {
+        width: 500px;
+        height: 180px;
+        border-radius: 25px;
+        .HeaderText {
+          font-size: 18px;
+          line-height: 120%;
+        }
+        .SecondText {
+          font-size: 16px;
+          line-height: 120%;
+        }
+      }
+    }
+  }
+
+  .FourthPart {
+    min-height: 580px;
+  }
+  .FourthContent {
+    .AgeText{
+      font-size: 18px;
+      letter-spacing: 0.05em;
+    }
+    h2 {
+      text-align: center;
+      font-size: 24px;
+    }
+    .PartnersText {
+      font-size: 18px;
+    }
+    .ScrollPane .CompanyIcon {
+      width: 113px;
+      height: 113px;
+
+      img {
+        align-self: center;
+        width: 85px;
+        height: 85px;
+      }
+    }
+
+    .ScrollPane #LeftScroller{
+      height: 95px;
+    }
+
+    .ScrollPane #RightScroller{
+      height: 95px;
+    }
+
+    .ScrollPane .CompanyIcon:nth-last-child(-n + 4){
+      display: none;
+    }
+    .ScrollCircles .ScrollCircle:nth-child(n+3){
+      display: flex;
+    }
+    .ScrollCircles .ScrollCircle:nth-child(n+4){
+      display: none;
+    }
+  }
+
+  .FifthPart {
+    min-height: 150px;
+  }
+  .FifthContent {
+    h2 {
+      font-size: 24px;
+    }
+    .WhiteOnBlueText {
+      font-size: 16px;
+      letter-spacing: 0.15em;
+    }
+  }
+
+  .Form {
+    min-height: 380px;
+  }
+  .textForm{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .inputElem {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    .inputs{
+      margin-bottom: 4%;
+    }
+  }
+  .inForm input {
+    width: 100%;
+    height: 65px;
+    font-size: 18px;
+  }
+  .inForm textarea {
+    font-size: 18px;
+    width: 100%;
+  }
+
+  footer {
+    min-height: 510px;
+    background: #2B4570;
+  }
+  .FooterContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  .FirstFooterColumn {
+    .Copyright {
+      p {
+        margin-top: 5%;
+        font-size: 10px;
+      }
+    }
+  }
+  .SecondFooterColumn {
+    margin-top: 5%;
+  }
+  .FooterColumnName {
+    margin-bottom: 2%;
+    p {
+      font-size: 16px;
+      line-height: 22px;
+      margin: 0;
+    }
+  }
+  .FooterColumnContent {
+    p {
+      font-size: 14px;
+      line-height: 22px;
+    }
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .container {
+    max-width: 370px;
+  }
+  .LogoAndText {
+    align-content: center;
+    .LogoText {
+      display: flex;
+      justify-content: center;
+      margin-left: 1%;
+      height: 44px;
+
+      .LogoName {
+        width: 198px;
+        height: 27px;
+        font-weight: bold;
+        font-size: 30px;
+        line-height: 37px;
+        display: flex;
+        align-items: center;
+        letter-spacing: 0.1em;
+        color: #F46036;
+      }
+
+      .LogoDescription {
+        width: 198px;
+        height: 10px;
+        padding: 5px 2px;
+        margin-top: 0;
+        display: flex;
+        align-items: center;
+        font-weight: 500;
+        font-size: 8px;
+        line-height: 10px;
+        letter-spacing: 0.028em;
+        color: #F46036;
+      }
+    }
+    img{
+      width: 40px;
+      height: 35px;
+    }
+  }
+  .BurgerMenu {
+    display: flex;
+    height: 35px;
+    width: 35px;
+    img{
+      height: 35px;
+      width: 35px;
+    }
+    margin-left: auto;
+  }
+  header {
+    height: 80px;
+    .menu {
+      display: none;
+    }
+  }
+
+  .FirstContent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 430px;
+  }
+  .Introduction {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+    width: 90%;
+    height: 400px;
+    .Slogan {
+      width: 290px;
+      height: 90%;
+      display: flex;
+      padding-left: 3px;
+      flex-direction: column;
+      align-items: center;
+      align-content: center;
+      justify-content: flex-start;
+      h1 {
+        margin-right: 0;
+        width: 100%;
+        font-weight: 800;
+        font-size: 28px;
+        line-height: 112%;
+        display: flex;
+        align-items: center;
+        font-variant: small-caps
+      }
+      p {
+        width: 100%;
+        font-weight: 500;
+        font-size: 18px;
+      }
+    }
+  }
+  .hammer {
+    display: none;
+  }
+
+  .SecondPart {
+    min-height: 500px;
+  }
+  .SecondContent {
+    .TechnicsTypes{
+      justify-content: space-around;
+      .WrapUl{
+        display: flex;
+        flex-wrap: nowrap;
+        li{
+          .BaseAlign{
+            width: 110px;
+            height: 180px;
+            img{
+              height: 60px;
+              width: 60px;
+            }
+            p{
+              font-size: 14px;
+            }
+          }
+        }
+      }
+      .Scrollers{
+        img{
+          width: 20px;
+        }
+        display: flex;
+      }
+    }
+    h2 {
+      font-size: 22px;
+    }
+    .TechnicsTypes li:nth-child(1){
+      margin-right: 3%;
+    }
+    .TechnicsTypes li:nth-child(n + 3){
+      display: none;
+    }
+    .HelpLine {
+      font-size: 14px;
+      line-height: 120%;
+    }
+  }
+
+  .ThirdPart {
+    min-height: 550px;
+  }
+  .ThirdContent{
+    h2{
+      font-size: 22px;
+      margin-bottom: 5%;
+    }
+  }
+  .Advantages {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-around;
+    .Scrollers{
+      display: flex;
+    }
+    .SimpleAdvantage {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      .IconAdvantage {
+        width: 130px;
+        height: 130px;
+        margin-bottom: 5%;
+        img {
+          height: 70px;
+          width: 70px;
+        }
+      }
+      .TextAdvantage {
+        width: 90%;
+        height: 250px;
+        border-radius: 25px;
+        .HeaderText {
+          font-size: 18px;
+          line-height: 120%;
+        }
+        .SecondText {
+          font-size: 16px;
+          line-height: 120%;
+        }
+      }
+    }
+  }
+  .Advantages .SimpleAdvantage:nth-child(n+3){
+    display: none;
+  }
+
+  .FourthPart {
+    min-height: 580px;
+  }
+  .FourthContent {
+    .AgeText{
+      font-size: 16px;
+      letter-spacing: 0.05em;
+    }
+    h2 {
+      text-align: center;
+      font-size: 22px;
+    }
+    .PartnersText {
+      font-size: 16px;
+    }
+    .ScrollPane .CompanyIcon {
+      width: 100px;
+      height: 100px;
+
+      img {
+        align-self: center;
+        width: 80px;
+        height: 80px;
+      }
+    }
+
+    .ScrollPane #LeftScroller{
+      height: 90px;
+    }
+
+    .ScrollPane #RightScroller{
+      height: 90px;
+    }
+
+    .ScrollPane .CompanyIcon:nth-last-child(-n + 5){
+      display: none;
+    }
+    .ScrollCircles .ScrollCircle:nth-child(n+2){
+      display: flex;
+    }
+  }
+
+  .FifthPart {
+    min-height: 150px;
+  }
+  .FifthContent {
+    h2 {
+      font-size: 22px;
+    }
+    .WhiteOnBlueText {
+      font-size: 14px;
+      letter-spacing: 0.15em;
+    }
+  }
+
+  .Form {
+    min-height: 380px;
+  }
+  .textForm{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .inputElem {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    .inputs{
+      margin-bottom: 4%;
+    }
+  }
+  .inForm input {
+    width: 100%;
+    height: 65px;
+    font-size: 16px;
+  }
+  .inForm textarea {
+    font-size: 16px;
+    width: 100%;
+  }
+  .inForm input[type="submit"] {
+    font-size: 14px;
+    width: 150px;
+    height: 47px;
+    font-family: 'Montserrat';
+  }
+
+  footer {
+    min-height: 480px;
+    background: #2B4570;
+  }
+  .FooterContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  .FirstFooterColumn {
+    .Copyright {
+      p {
+        margin-top: 5%;
+        font-size: 10px;
+      }
+    }
+  }
+  .SecondFooterColumn {
+    margin-top: 5%;
+  }
+  .FooterColumnName {
+    margin-bottom: 2%;
+    p {
+      font-size: 14px;
+      line-height: 22px;
+      margin: 0;
+    }
+  }
+  .FooterColumnContent {
+    p {
+      font-size: 12px;
+      line-height: 22px;
+    }
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .container {
+    max-width: 100%;
+  }
+  .LogoAndText {
+    align-content: center;
+    .LogoText {
+      display: flex;
+      justify-content: center;
+      margin-left: 1%;
+      height: 44px;
+
+      .LogoName {
+        width: 198px;
+        height: 27px;
+        font-weight: bold;
+        font-size: 30px;
+        line-height: 37px;
+        display: flex;
+        align-items: center;
+        letter-spacing: 0.1em;
+        color: #F46036;
+      }
+
+      .LogoDescription {
+        width: 198px;
+        height: 10px;
+        padding: 5px 2px;
+        margin-top: 0;
+        display: flex;
+        align-items: center;
+        font-weight: 500;
+        font-size: 8px;
+        line-height: 10px;
+        letter-spacing: 0.028em;
+        color: #F46036;
+      }
+    }
+    img{
+      width: 40px;
+      height: 35px;
+    }
+  }
+  .BurgerMenu {
+    display: flex;
+    height: 35px;
+    width: 35px;
+    img{
+      height: 35px;
+      width: 35px;
+    }
+    margin-left: auto;
+  }
+  header {
+    height: 80px;
+    .menu {
+      display: none;
+    }
+  }
+  .FirstPart{
+    height: 450px;
+  }
+  .FirstContent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+  .Introduction {
+    width: 90%;
+    height: 80%;
+    .Slogan {
+      width: 100%;
+      height: 90%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      h1 {
+        margin-right: 0;
+        width: 100%;
+        font-weight: 800;
+        font-size: 28px;
+        line-height: 112%;
+        display: flex;
+        align-items: center;
+        font-variant: small-caps
+      }
+      p {
+        width: 100%;
+        font-weight: 500;
+        font-size: 18px;
+      }
+    }
+  }
+  .hammer {
+    display: none;
+  }
+
+  .SecondPart {
+    min-height: 500px;
+  }
+  .SecondContent {
+    .TechnicsTypes{
+      justify-content: space-around;
+      .WrapUl{
+        display: flex;
+        flex-wrap: nowrap;
+        li{
+          .BaseAlign{
+            width: 110px;
+            height: 180px;
+            img{
+              height: 60px;
+              width: 60px;
+            }
+            p{
+              font-size: 14px;
+            }
+          }
+        }
+      }
+      .Scrollers{
+        img{
+          width: 20px;
+        }
+        display: flex;
+      }
+    }
+    h2 {
+      font-size: 22px;
+    }
+    .TechnicsTypes li:nth-child(1){
+      margin-right: 3%;
+    }
+    .TechnicsTypes li:nth-child(n + 3){
+      display: none;
+    }
+    .HelpLine {
+      font-size: 14px;
+      line-height: 120%;
+    }
+  }
+
+  .ThirdPart {
+    min-height: 550px;
+  }
+  .ThirdContent{
+    h2{
+      font-size: 22px;
+      margin-bottom: 5%;
+    }
+  }
+  .Advantages {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-around;
+    .Scrollers{
+      display: flex;
+    }
+    .SimpleAdvantage {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      .IconAdvantage {
+        width: 130px;
+        height: 130px;
+        margin-bottom: 5%;
+        img {
+          height: 70px;
+          width: 70px;
+        }
+      }
+      .TextAdvantage {
+        width: 90%;
+        height: 250px;
+        border-radius: 25px;
+        .HeaderText {
+          font-size: 18px;
+          line-height: 120%;
+        }
+        .SecondText {
+          font-size: 16px;
+          line-height: 120%;
+        }
+      }
+    }
+  }
+  .Advantages .SimpleAdvantage:nth-child(n+3){
+    display: none;
+  }
+
+  .FourthPart {
+    min-height: 580px;
+  }
+  .FourthContent {
+    .AgeText{
+      font-size: 16px;
+      letter-spacing: 0.05em;
+    }
+    h2 {
+      text-align: center;
+      font-size: 22px;
+    }
+    .PartnersText {
+      font-size: 16px;
+    }
+    .ScrollPane .CompanyIcon {
+      width: 100px;
+      height: 100px;
+
+      img {
+        align-self: center;
+        width: 80px;
+        height: 80px;
+      }
+    }
+
+    .ScrollPane #LeftScroller{
+      height: 90px;
+    }
+
+    .ScrollPane #RightScroller{
+      height: 90px;
+    }
+
+    .ScrollPane .CompanyIcon:nth-last-child(-n + 5){
+      display: none;
+    }
+    .ScrollCircles .ScrollCircle:nth-child(n+2){
+      display: flex;
+    }
+  }
+
+  .FifthPart {
+    min-height: 150px;
+  }
+  .FifthContent {
+    h2 {
+      font-size: 22px;
+    }
+    .WhiteOnBlueText {
+      font-size: 14px;
+      letter-spacing: 0.15em;
+    }
+  }
+
+  .Form {
+    min-height: 380px;
+  }
+  .textForm{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .inputElem {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    .inputs{
+      margin-bottom: 4%;
+    }
+  }
+  .inForm input {
+    width: 100%;
+    height: 65px;
+    font-size: 16px;
+  }
+  .inForm textarea {
+    font-size: 16px;
+    width: 100%;
+  }
+  .inForm input[type="submit"] {
+    font-size: 14px;
+    width: 150px;
+    height: 47px;
+    font-family: 'Montserrat';
+  }
+
+  footer {
+    min-height: 480px;
+    background: #2B4570;
+  }
+  .FooterContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  .FirstFooterColumn {
+    .Copyright {
+      p {
+        margin-top: 5%;
+        font-size: 10px;
+      }
+    }
+  }
+  .SecondFooterColumn {
+    margin-top: 5%;
+  }
+  .FooterColumnName {
+    margin-bottom: 2%;
+    p {
+      font-size: 14px;
+      line-height: 22px;
+      margin: 0;
+    }
+  }
+  .FooterColumnContent {
+    p {
+      font-size: 12px;
+      line-height: 22px;
+    }
+  }
 }
