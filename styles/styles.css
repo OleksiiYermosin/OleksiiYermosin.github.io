@@ -661,6 +661,9 @@ footer {
   flex-direction: column;
   justify-content: center;
 }
+.FirstInfoContent .WrapDiv {
+  justify-content: space-between;
+}
 .FirstInfoContent .MainHeadText {
   margin-top: 0;
   margin-bottom: 5%;
@@ -705,7 +708,6 @@ footer {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  margin-right: 10%;
 }
 .InfoButtonCont a {
   text-decoration: none;
@@ -744,8 +746,9 @@ footer {
 }
 .SecondInfoContent {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
   height: 550px;
   background: rgba(255, 255, 255, 0.75);
 }
@@ -754,7 +757,7 @@ footer {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 654px;
+  width: 500px;
 }
 .SecondInfoTextBox {
   display: flex;
@@ -797,6 +800,7 @@ footer {
 .ThirdInfoColumn {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
 }
 .ThirdInfoColumn .InfoIntro {
   height: 440px;
@@ -834,7 +838,6 @@ footer {
   align-self: flex-end;
   width: 370px;
   height: 318px;
-  margin-bottom: 17%;
 }
 .SecondInfoImg {
   display: flex;
@@ -1041,6 +1044,95 @@ footer {
   }
   .BoldText {
     font-size: 20px;
+  }
+  .FirstInfoPart {
+    min-height: 671px;
+  }
+  .InfoBG {
+    width: 410px;
+    height: 344px;
+  }
+  .InfoIntro {
+    width: 410px;
+    height: 419px;
+  }
+  .BoldInfoText {
+    font-size: 22px;
+    line-height: 27px;
+    letter-spacing: 0.03em;
+  }
+  .SimpleInfoText {
+    font-size: 22px;
+    line-height: 27px;
+    letter-spacing: 0.03em;
+  }
+  .InfoIntroText {
+    width: 380px;
+  }
+  .InfoButton {
+    width: 306px;
+    height: 50px;
+  }
+  .InfoWhiteText {
+    font-size: 18px;
+  }
+  .SecondInfoPart {
+    min-height: 680px;
+    display: flex;
+    align-items: center;
+    background: url('../img/informationaltv/infoBG1.png') no-repeat center top / cover;
+  }
+  .SecondInfoContent {
+    height: 550px;
+  }
+  .SecondInfoBox {
+    width: 430px;
+  }
+  .SecondInfoTextBox {
+    width: 400px;
+  }
+  .InfoOrangeText {
+    font-size: 22px;
+  }
+  .InfoSimpleText {
+    font-size: 18px;
+  }
+  .ThirdInfoPart {
+    min-height: 790px;
+  }
+  .InfoSmallText {
+    font-size: 28px;
+  }
+  .ThirdInfoColumn {
+    display: flex;
+    flex-direction: column;
+  }
+  .ThirdInfoColumn .InfoIntro {
+    height: 400px;
+    width: 560px;
+  }
+  .ThirdInfoColumn .InfoIntro .InfoIntroText {
+    width: 530px;
+  }
+  .ThirdInfoColumn .InfoIntro .InfoIntroText .SimpleInfoText {
+    font-size: 20px;
+  }
+  .ThirdInfoColumn .InfoIntroText {
+    width: 560px;
+  }
+  .ThirdInfoColumn .InfoIntroText .InfoOrangeText {
+    font-size: 22px;
+  }
+  .ThirdInfoColumn .InfoIntroText .BoldInfoText {
+    font-size: 18px;
+  }
+  .FirstInfoImg {
+    width: 340px;
+    height: 298px;
+  }
+  .SecondInfoImg {
+    width: 220px;
+    height: 262px;
   }
 }
 @media screen and (max-width: 991px) {
@@ -1264,6 +1356,126 @@ footer {
   }
   .BoldText {
     font-size: 18px;
+  }
+  .FirstInfoPart {
+    min-height: 520px;
+  }
+  .FirstInfoContent .MainHeadText {
+    line-height: 100%;
+  }
+  .InfoBG {
+    width: 290px;
+    height: 254px;
+  }
+  .InfoIntro {
+    width: 350px;
+    height: 320px;
+  }
+  .BoldInfoText {
+    font-size: 20px;
+    line-height: 20px;
+    letter-spacing: 0.03em;
+  }
+  .SimpleInfoText {
+    font-size: 20px;
+    line-height: 20px;
+    letter-spacing: 0.03em;
+  }
+  .InfoIntroText {
+    width: 330px;
+  }
+  .InfoButton {
+    width: 286px;
+    height: 50px;
+  }
+  .InfoWhiteText {
+    font-size: 16px;
+  }
+  .SecondInfoPart {
+    height: 860px;
+  }
+  .SecondInfoContent {
+    height: 760px;
+    justify-content: space-around;
+  }
+  .SecondInfoBox {
+    width: 630px;
+    height: 350px;
+  }
+  .SecondInfoTextBox {
+    width: 600px;
+    height: 340px;
+  }
+  .InfoOrangeText {
+    font-size: 22px;
+  }
+  .SecondInfoContent .SecondInfoBox:nth-child(2) .InfoOrangeText {
+    margin-top: 0;
+  }
+  .InfoSimpleText {
+    font-size: 18px;
+    margin: 0;
+  }
+  .ThirdInfoPart {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 1120px;
+  }
+  .ThirdInfoContent {
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .InfoSmallText {
+    font-size: 24px;
+    margin-bottom: 2%;
+  }
+  .ThirdInfoColumn {
+    display: flex;
+    flex-direction: row;
+    width: 690px;
+    height: 350px;
+  }
+  .ThirdInfoColumn .InfoIntro {
+    height: 420px;
+    width: 690px;
+  }
+  .ThirdInfoColumn .InfoIntro .InfoIntroText {
+    width: 630px;
+  }
+  .ThirdInfoColumn .InfoIntro .InfoIntroText .SimpleInfoText {
+    font-size: 22px;
+  }
+  .ThirdInfoColumn .InfoIntroText {
+    width: 630px;
+  }
+  .ThirdInfoColumn .InfoIntroText .InfoOrangeText {
+    font-size: 22px;
+  }
+  .ThirdInfoColumn .InfoIntroText .BoldInfoText {
+    width: 690px;
+    font-size: 18px;
+  }
+  .ThirdInfoColumn .InfoIntroText {
+    width: 690px;
+  }
+  .ThirdInfoColumn .InfoIntroText .InfoOrangeText {
+    margin-top: 0;
+  }
+  .ThirdInfoContent .ThirdInfoColumn:nth-child(1) {
+    width: 690px;
+    height: 614px;
+    flex-direction: column;
+    align-content: space-between;
+  }
+  .FirstInfoImg {
+    width: 330px;
+    height: 300px;
+  }
+  .SecondInfoImg {
+    width: 330px;
+    height: 300px;
   }
 }
 @media screen and (max-width: 767px) {
@@ -1507,6 +1719,116 @@ footer {
   }
   .BoldText {
     font-size: 16px;
+  }
+  .FirstInfoPart {
+    height: 840px;
+  }
+  .FirstInfoContent .MainHeadText {
+    line-height: 100%;
+  }
+  .InfoBG {
+    width: 290px;
+    height: 254px;
+    align-self: center;
+  }
+  .InfoButtonCont {
+    width: 100%;
+    margin-bottom: 5%;
+  }
+  .InfoIntro {
+    width: 100%;
+    height: 320px;
+  }
+  .BoldInfoText {
+    font-size: 20px;
+    line-height: 20px;
+    letter-spacing: 0.03em;
+  }
+  .SimpleInfoText {
+    font-size: 20px;
+    line-height: 20px;
+    letter-spacing: 0.03em;
+  }
+  .InfoIntroText {
+    width: 90%;
+  }
+  .InfoButton {
+    width: 256px;
+    height: 45px;
+  }
+  .SecondInfoPart {
+    height: 960px;
+  }
+  .SecondInfoContent {
+    height: 850px;
+    justify-content: space-around;
+  }
+  .SecondInfoBox {
+    width: 90%;
+    height: 400px;
+  }
+  .SecondInfoTextBox {
+    width: 100%;
+    height: 400px;
+  }
+  .InfoOrangeText {
+    font-size: 20px;
+    margin-top: 12%;
+  }
+  .SecondInfoContent .SecondInfoBox:nth-child(2) .InfoOrangeText {
+    margin-top: 0;
+  }
+  .InfoSimpleText {
+    font-size: 16px;
+    margin: 0;
+  }
+  .ThirdInfoPart {
+    height: 1000px;
+  }
+  .InfoSmallText {
+    font-size: 22px;
+    margin-bottom: 2%;
+  }
+  .ThirdInfoColumn {
+    width: 510px;
+    height: 220px;
+  }
+  .ThirdInfoColumn .InfoIntro {
+    height: 450px;
+    width: 510px;
+  }
+  .ThirdInfoColumn .InfoIntro .InfoIntroText {
+    width: 480px;
+  }
+  .ThirdInfoColumn .InfoIntro .InfoIntroText .SimpleInfoText {
+    font-size: 20px;
+  }
+  .ThirdInfoColumn .InfoIntroText {
+    width: 510px;
+  }
+  .ThirdInfoColumn .InfoIntroText .InfoOrangeText {
+    font-size: 22px;
+  }
+  .ThirdInfoColumn .InfoIntroText .BoldInfoText {
+    width: 510px;
+    font-size: 18px;
+  }
+  .ThirdInfoColumn .InfoIntroText .InfoOrangeText {
+    margin-top: 0;
+  }
+  .ThirdInfoContent .ThirdInfoColumn:nth-child(1) {
+    width: 510px;
+    height: 640px;
+    flex-direction: column;
+    align-content: space-between;
+  }
+  .FirstInfoImg {
+    width: 230px;
+    height: 200px;
+  }
+  .SecondInfoImg {
+    width: 230px;
+    height: 200px;
   }
 }
 @media screen and (max-width: 576px) {
@@ -1841,6 +2163,120 @@ footer {
   .BoldText {
     font-size: 14px;
   }
+  .FirstInfoPart {
+    height: 790px;
+  }
+  .FirstInfoContent .MainHeadText {
+    line-height: 100%;
+  }
+  .InfoBG {
+    width: 290px;
+    height: 254px;
+    align-self: center;
+  }
+  .InfoButtonCont {
+    width: 100%;
+    margin-bottom: 5%;
+  }
+  .InfoIntro {
+    width: 100%;
+    height: 300px;
+  }
+  .BoldInfoText {
+    font-size: 18px;
+    line-height: 20px;
+    letter-spacing: 0.03em;
+  }
+  .SimpleInfoText {
+    font-size: 18px;
+    line-height: 20px;
+    letter-spacing: 0.03em;
+  }
+  .InfoIntroText {
+    width: 90%;
+  }
+  .InfoButton {
+    width: 236px;
+    height: 40px;
+  }
+  .SecondInfoPart {
+    height: 1200px;
+  }
+  .SecondInfoContent {
+    height: 1100px;
+    justify-content: space-around;
+  }
+  .SecondInfoBox {
+    width: 90%;
+    height: 550px;
+  }
+  .SecondInfoTextBox {
+    width: 100%;
+    height: 400px;
+  }
+  .InfoOrangeText {
+    font-size: 20px;
+    margin-top: 10%;
+  }
+  .SecondInfoContent .SecondInfoBox:nth-child(2) {
+    height: 510px;
+  }
+  .SecondInfoContent .SecondInfoBox:nth-child(2) .InfoOrangeText {
+    margin-top: 0;
+  }
+  .InfoSimpleText {
+    font-size: 16px;
+    margin: 0;
+  }
+  .ThirdInfoPart {
+    height: 980px;
+  }
+  .InfoSmallText {
+    font-size: 20px;
+    margin-bottom: 2%;
+  }
+  .ThirdInfoColumn {
+    width: 370px;
+    height: 180px;
+  }
+  .ThirdInfoColumn .InfoIntro {
+    height: 450px;
+    width: 370px;
+  }
+  .ThirdInfoColumn .InfoIntro .InfoIntroText {
+    width: 340px;
+  }
+  .ThirdInfoColumn .InfoIntro .InfoIntroText .SimpleInfoText {
+    font-size: 18px;
+    line-height: 22px;
+  }
+  .ThirdInfoColumn .InfoIntroText {
+    width: 370px;
+  }
+  .ThirdInfoColumn .InfoIntroText .InfoOrangeText {
+    font-size: 20px;
+  }
+  .ThirdInfoColumn .InfoIntroText .BoldInfoText {
+    width: 370px;
+    font-size: 16px;
+  }
+  .ThirdInfoColumn .InfoIntroText .InfoOrangeText {
+    margin-top: 0;
+  }
+  .ThirdInfoContent .ThirdInfoColumn:nth-child(1) {
+    width: 370px;
+    height: 680px;
+    flex-direction: column;
+    align-content: space-between;
+  }
+  .FirstInfoImg {
+    width: 180px;
+    height: 150px;
+  }
+  .SecondInfoImg {
+    width: 180px;
+    height: 150px;
+  }
 }
 @media screen and (max-width: 400px) {
   .container {
@@ -2167,6 +2603,121 @@ footer {
   }
   .BoldText {
     font-size: 14px;
+  }
+  .FirstInfoPart {
+    height: 810px;
+  }
+  .FirstInfoContent .MainHeadText {
+    line-height: 100%;
+  }
+  .InfoBG {
+    width: 290px;
+    height: 254px;
+    align-self: center;
+  }
+  .InfoButtonCont {
+    width: 100%;
+    margin-bottom: 5%;
+  }
+  .InfoIntro {
+    width: 100%;
+    height: 350px;
+  }
+  .BoldInfoText {
+    font-size: 18px;
+    line-height: 20px;
+    letter-spacing: 0.03em;
+  }
+  .SimpleInfoText {
+    font-size: 18px;
+    line-height: 20px;
+    letter-spacing: 0.03em;
+  }
+  .InfoIntroText {
+    width: 90%;
+  }
+  .InfoButton {
+    width: 206px;
+    height: 35px;
+  }
+  .SecondInfoPart {
+    height: 1500px;
+  }
+  .SecondInfoContent {
+    height: 1460px;
+    justify-content: space-around;
+  }
+  .SecondInfoBox {
+    width: 90%;
+    height: 690px;
+  }
+  .SecondInfoTextBox {
+    width: 100%;
+    height: 680px;
+  }
+  .InfoOrangeText {
+    font-size: 20px;
+    margin-top: 0;
+  }
+  .SecondInfoContent .SecondInfoBox:nth-child(2) {
+    height: 650px;
+  }
+  .SecondInfoContent .SecondInfoBox:nth-child(2) .InfoOrangeText {
+    margin-top: 0;
+  }
+  .InfoSimpleText {
+    font-size: 16px;
+    margin: 0;
+  }
+  .ThirdInfoPart {
+    height: 880px;
+  }
+  .InfoSmallText {
+    font-size: 18px;
+    line-height: 20px;
+    margin-bottom: 2%;
+  }
+  .ThirdInfoColumn {
+    width: 290px;
+    height: 120px;
+  }
+  .ThirdInfoColumn .InfoIntro {
+    height: 450px;
+    width: 290px;
+  }
+  .ThirdInfoColumn .InfoIntro .InfoIntroText {
+    width: 260px;
+  }
+  .ThirdInfoColumn .InfoIntro .InfoIntroText .SimpleInfoText {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .ThirdInfoColumn .InfoIntroText {
+    width: 290px;
+  }
+  .ThirdInfoColumn .InfoIntroText .InfoOrangeText {
+    font-size: 18px;
+  }
+  .ThirdInfoColumn .InfoIntroText .BoldInfoText {
+    width: 290px;
+    font-size: 16px;
+  }
+  .ThirdInfoColumn .InfoIntroText .InfoOrangeText {
+    margin-top: 0;
+  }
+  .ThirdInfoContent .ThirdInfoColumn:nth-child(1) {
+    width: 290px;
+    height: 680px;
+    flex-direction: column;
+    align-content: space-between;
+  }
+  .FirstInfoImg {
+    width: 130px;
+    height: 100px;
+  }
+  .SecondInfoImg {
+    width: 130px;
+    height: 100px;
   }
 }
 /*# sourceMappingURL=styles.css.map */
