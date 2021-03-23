@@ -2200,10 +2200,10 @@ footer {
     height: 40px;
   }
   .SecondInfoPart {
-    height: 1200px;
+    height: 1320px;
   }
   .SecondInfoContent {
-    height: 1100px;
+    height: 1240px;
     justify-content: space-around;
   }
   .SecondInfoBox {
@@ -2236,46 +2236,46 @@ footer {
     margin-bottom: 2%;
   }
   .ThirdInfoColumn {
-    width: 370px;
+    width: 340px;
     height: 180px;
   }
   .ThirdInfoColumn .InfoIntro {
     height: 450px;
-    width: 370px;
+    width: 340px;
   }
   .ThirdInfoColumn .InfoIntro .InfoIntroText {
-    width: 340px;
+    width: 320px;
   }
   .ThirdInfoColumn .InfoIntro .InfoIntroText .SimpleInfoText {
     font-size: 18px;
     line-height: 22px;
   }
   .ThirdInfoColumn .InfoIntroText {
-    width: 370px;
+    width: 340px;
   }
   .ThirdInfoColumn .InfoIntroText .InfoOrangeText {
     font-size: 20px;
   }
   .ThirdInfoColumn .InfoIntroText .BoldInfoText {
-    width: 370px;
+    width: 340px;
     font-size: 16px;
   }
   .ThirdInfoColumn .InfoIntroText .InfoOrangeText {
     margin-top: 0;
   }
   .ThirdInfoContent .ThirdInfoColumn:nth-child(1) {
-    width: 370px;
+    width: 340px;
     height: 680px;
     flex-direction: column;
     align-content: space-between;
   }
   .FirstInfoImg {
-    width: 180px;
-    height: 150px;
+    width: 160px;
+    height: 130px;
   }
   .SecondInfoImg {
-    width: 180px;
-    height: 150px;
+    width: 160px;
+    height: 130px;
   }
 }
 @media screen and (max-width: 400px) {
