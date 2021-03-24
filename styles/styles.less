@@ -3006,33 +3006,39 @@ footer {
   }
 
   .SecondInfoPart {
-    height: 1500px;
+     height: auto;
   }
   .SecondInfoContent {
-    height: 1460px;
+    height: auto;
+    margin-top: 5%;
+    margin-bottom: 5%;
     justify-content: space-around;
   }
   .SecondInfoBox {
     width: 90%;
-    height: 690px;
+    height: auto;
   }
   .SecondInfoTextBox {
     width: 100%;
-    height: 680px;
+    height: auto;
   }
   .InfoOrangeText {
+    margin-top: 5%;
+    margin-bottom: 2%;
     font-size: 20px;
-    margin-top: 0;
+  }
+  .SecondInfoContent .SecondInfoBox:nth-child(n){
+    height: auto;
   }
   .SecondInfoContent .SecondInfoBox:nth-child(2){
-    height: 650px;
+    height: auto;
     .InfoOrangeText {
       margin-top: 0;
     }
   }
   .InfoSimpleText {
     font-size: 16px;
-    margin: 0;
+    margin-bottom: 2%;
   }
 
   .ThirdInfoPart {
@@ -3044,13 +3050,13 @@ footer {
     margin-bottom: 2%;
   }
   .ThirdInfoColumn {
-    width: 290px;
+    width: 100%;
     height: 120px;
     .InfoIntro {
       height: 450px;
-      width: 290px;
+      width: 100%;
       .InfoIntroText {
-        width: 260px;
+        width: 90%;
         .SimpleInfoText {
           font-size: 16px;
           line-height: 20px;
@@ -3058,12 +3064,12 @@ footer {
       }
     }
     .InfoIntroText {
-      width: 290px;
+      width: 100%;
       .InfoOrangeText {
         font-size: 18px;
       }
       .BoldInfoText {
-        width: 290px;
+        width: 100%;
         font-size: 16px;
       }
     }
@@ -3074,7 +3080,7 @@ footer {
     }
   }
   .ThirdInfoContent .ThirdInfoColumn:nth-child(1){
-    width: 290px;
+    width: 100%;
     height: 680px;
     flex-direction: column;
     align-content: space-between;
