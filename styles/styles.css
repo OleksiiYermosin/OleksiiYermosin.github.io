@@ -780,7 +780,7 @@ footer {
   color: #000000;
 }
 .ThirdInfoPart {
-  min-height: 900px;
+  height: 900px;
   display: flex;
   align-items: center;
 }
@@ -1247,7 +1247,7 @@ footer {
     font-size: 18px;
   }
   .ThirdInfoPart {
-    min-height: 790px;
+    height: 790px;
   }
   .InfoSmallText {
     font-size: 28px;
@@ -2168,10 +2168,12 @@ footer {
     height: 45px;
   }
   .SecondInfoPart {
-    height: 960px;
+    height: 100%;
   }
   .SecondInfoContent {
-    height: 850px;
+    height: 100%;
+    margin-top: 5%;
+    margin-bottom: 5%;
     justify-content: space-around;
   }
   .SecondInfoBox {
@@ -2184,7 +2186,7 @@ footer {
   }
   .InfoOrangeText {
     font-size: 20px;
-    margin-top: 12%;
+    margin-top: 10%;
   }
   .SecondInfoContent .SecondInfoBox:nth-child(2) .InfoOrangeText {
     margin-top: 0;
@@ -2751,29 +2753,35 @@ footer {
     height: 40px;
   }
   .SecondInfoPart {
-    height: 1320px;
+    height: 100%;
   }
   .SecondInfoContent {
-    height: 1240px;
+    height: 100%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    padding-top: 6%;
+    padding-bottom: 6%;
     justify-content: space-around;
   }
   .SecondInfoBox {
     width: 90%;
-    height: 550px;
+    height: 100%;
   }
   .SecondInfoTextBox {
     width: 100%;
-    height: 400px;
+    height: 100%;
   }
   .InfoOrangeText {
     font-size: 20px;
-    margin-top: 10%;
+    margin-top: 0;
+    margin-bottom: 3%;
   }
   .SecondInfoContent .SecondInfoBox:nth-child(2) {
-    height: 510px;
+    height: 100%;
   }
   .SecondInfoContent .SecondInfoBox:nth-child(2) .InfoOrangeText {
     margin-top: 0;
+    margin-bottom: 3%;
   }
   .InfoSimpleText {
     font-size: 16px;
@@ -3338,8 +3346,8 @@ footer {
   }
   .SecondInfoContent {
     height: auto;
-    margin-top: 5%;
-    margin-bottom: 5%;
+    margin-top: 7%;
+    margin-bottom: 7%;
     justify-content: space-around;
   }
   .SecondInfoBox {
@@ -3369,7 +3377,9 @@ footer {
     margin-bottom: 2%;
   }
   .ThirdInfoPart {
-    height: 880px;
+    height: 100%;
+    padding-bottom: 7%;
+    padding-top: 7%;
   }
   .InfoSmallText {
     font-size: 18px;
@@ -3381,17 +3391,22 @@ footer {
     height: 120px;
   }
   .ThirdInfoColumn .InfoIntro {
-    height: 450px;
+    height: 100%;
     width: 100%;
+    margin-bottom: 3%;
   }
   .ThirdInfoColumn .InfoIntro .InfoIntroText {
+    height: 100%;
     width: 90%;
+    padding-top: 2%;
+    padding-bottom: 2%;
   }
   .ThirdInfoColumn .InfoIntro .InfoIntroText .SimpleInfoText {
     font-size: 16px;
     line-height: 20px;
   }
   .ThirdInfoColumn .InfoIntroText {
+    height: 95%;
     width: 100%;
   }
   .ThirdInfoColumn .InfoIntroText .InfoOrangeText {
@@ -3406,7 +3421,7 @@ footer {
   }
   .ThirdInfoContent .ThirdInfoColumn:nth-child(1) {
     width: 100%;
-    height: 680px;
+    height: 80%;
     flex-direction: column;
     align-content: space-between;
   }
