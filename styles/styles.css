@@ -43,9 +43,23 @@ nav {
   line-height: 15px;
   color: #F46036;
 }
+header button:focus {
+  outline: none;
+}
+header .BurgerMenu {
+  border: none;
+  border-color: #2B4570;
+  background: none;
+}
 .BurgerMenu {
   display: none;
   margin-left: auto;
+  padding: 0;
+}
+.BurgerMenu button {
+  border: none;
+  border-color: #2B4570;
+  background: none;
 }
 header {
   height: 117px;
@@ -54,22 +68,22 @@ header {
   display: flex;
   align-items: center;
 }
-header .menu {
+.menu {
   list-style-type: none;
   display: flex;
   margin-left: auto;
 }
-header .menu li {
+.menu li {
   display: block;
   text-align: center;
   padding: 0;
   margin-right: 30px;
 }
-header .menu li a {
+.menu li a {
   text-decoration: none;
   color: #F2F4F3;
 }
-header .menu li:nth-child(4) {
+.menu li:nth-child(4) {
   margin-right: 0;
 }
 .FirstPart {
@@ -981,7 +995,7 @@ footer {
   -webkit-text-fill-color: black;
   font-family: 'Montserrat';
 }
-.CheckContent input[type="submit"] {
+.CheckContent input[type="button"] {
   margin-bottom: 0;
   padding: 0;
   text-align: center;
@@ -996,6 +1010,31 @@ footer {
   background: #2B4570;
   box-shadow: 0 9px 35px rgba(43, 69, 112, 0.56);
   border-radius: 10px;
+}
+header .showMenu {
+  display: block;
+  position: absolute;
+  padding-left: 3%;
+  padding-bottom: 3%;
+  padding-top: 3%;
+  right: 0;
+  top: 100px;
+  width: 35%;
+  opacity: 90%;
+  margin: 0;
+  background: #2B4570;
+  text-align: left;
+}
+header .showMenu ul.menu.showMenu {
+  margin: 0;
+}
+header .showMenu li {
+  margin: 0;
+  text-align: unset;
+  padding: 5%;
+}
+header .showMenu .menu li:nth-child(4) {
+  margin-right: 13px;
 }
 @media screen and (max-width: 1200px) {
   .container {
@@ -1398,7 +1437,7 @@ footer {
     -webkit-text-fill-color: black;
     font-family: 'Montserrat';
   }
-  .CheckContent input[type="submit"] {
+  .CheckContent input[type="button"] {
     text-align: center;
     margin-bottom: 0;
     padding: 0;
@@ -1872,7 +1911,7 @@ footer {
     -webkit-text-fill-color: black;
     font-family: 'Montserrat';
   }
-  .CheckContent input[type="submit"] {
+  .CheckContent input[type="button"] {
     text-align: center;
     margin-bottom: 0;
     padding: 0;
@@ -1897,10 +1936,17 @@ footer {
     width: 45px;
     height: 40px;
   }
+  .menu {
+    display: none;
+  }
+  .menu ul {
+    margin: 0;
+  }
   .BurgerMenu {
     display: flex;
     height: 44px;
     width: 44px;
+    background: none;
     margin-left: auto;
   }
   .BurgerMenu img {
@@ -1910,8 +1956,8 @@ footer {
   header {
     height: 100px;
   }
-  header .menu {
-    display: none;
+  header .menu li:nth-child(4) {
+    margin-right: 13px;
   }
   .FirstContent {
     display: flex;
@@ -2367,7 +2413,7 @@ footer {
     -webkit-text-fill-color: black;
     font-family: 'Montserrat';
   }
-  .CheckContent input[type="submit"] {
+  .CheckContent input[type="button"] {
     text-align: center;
     margin-bottom: 0;
     padding: 0;
@@ -2438,8 +2484,9 @@ footer {
   header {
     height: 80px;
   }
-  header .menu {
-    display: none;
+  header .showMenu {
+    top: 80px;
+    width: 40%;
   }
   .FirstContent {
     display: flex;
@@ -2960,7 +3007,7 @@ footer {
     -webkit-text-fill-color: black;
     font-family: 'Montserrat';
   }
-  .CheckContent input[type="submit"] {
+  .CheckContent input[type="button"] {
     text-align: center;
     margin-bottom: 0;
     padding: 0;
@@ -3031,8 +3078,9 @@ footer {
   header {
     height: 80px;
   }
-  header .menu {
-    display: none;
+  header .showMenu {
+    top: 80px;
+    width: 50%;
   }
   .FirstPart {
     height: 450px;
@@ -3557,7 +3605,7 @@ footer {
     -webkit-text-fill-color: black;
     font-family: 'Montserrat';
   }
-  .CheckContent input[type="submit"] {
+  .CheckContent input[type="button"] {
     text-align: center;
     margin-bottom: 0;
     padding: 0;

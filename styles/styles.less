@@ -50,9 +50,25 @@ nav {
   }
 }
 
+header{
+  button:focus{
+    outline: none;
+  }
+  .BurgerMenu{
+    border: none;
+    border-color: #2B4570;
+    background: none;
+  }
+}
 .BurgerMenu {
   display: none;
   margin-left: auto;
+  padding: 0;
+  button{
+    border: none;
+    border-color: #2B4570;
+    background: none;
+  }
 }
 
 header {
@@ -61,25 +77,25 @@ header {
   margin: 0;
   display: flex;
   align-items: center;
+}
 
-  .menu {
-    list-style-type: none;
-    display: flex;
-    margin-left: auto;
-    li {
-      display: block;
-      text-align: center;
-      padding: 0;
-      margin-right: 30px;
-      a {
-        text-decoration: none;
-        color: #F2F4F3;
-      }
+.menu {
+  list-style-type: none;
+  display: flex;
+  margin-left: auto;
+  li {
+    display: block;
+    text-align: center;
+    padding: 0;
+    margin-right: 30px;
+    a {
+      text-decoration: none;
+      color: #F2F4F3;
     }
   }
-  .menu li:nth-child(4){
-    margin-right: 0;
-  }
+}
+.menu li:nth-child(4){
+  margin-right: 0;
 }
 
 .FirstPart {
@@ -1116,7 +1132,7 @@ footer {
     -webkit-text-fill-color: black;
     font-family: 'Montserrat';
   }
-  input[type="submit"] {
+  input[type="button"] {
     margin-bottom: 0;
     padding: 0;
     text-align: center;
@@ -1134,6 +1150,31 @@ footer {
   }
 }
 
+header .showMenu{
+  display: block;
+  position: absolute;
+  padding-left: 3%;
+  padding-bottom: 3%;
+  padding-top: 3%;
+  right: 0;
+  top: 100px;
+  width: 35%;
+  opacity: 90%;
+  margin: 0;
+  background: #2B4570;
+  text-align: left;
+  ul.menu.showMenu{
+    margin: 0;
+  }
+  li{
+    margin: 0;
+    text-align: unset;
+    padding: 5%;
+  }
+  .menu li:nth-child(4) {
+    margin-right: 13px;
+  }
+}
 
 @media screen and (max-width: 1200px) {
   .container {
@@ -1587,7 +1628,7 @@ footer {
       -webkit-text-fill-color: black;
       font-family: 'Montserrat';
     }
-    input[type="submit"] {
+    input[type="button"] {
       text-align: center;
       margin-bottom: 0;
       padding: 0;
@@ -1645,6 +1686,7 @@ footer {
   }
   header {
     height: 100px;
+
     .menu {
       li {
         font-size: 15px;
@@ -2118,7 +2160,7 @@ footer {
       -webkit-text-fill-color: black;
       font-family: 'Montserrat';
     }
-    input[type="submit"] {
+    input[type="button"] {
       text-align: center;
       margin-bottom: 0;
       padding: 0;
@@ -2148,10 +2190,18 @@ footer {
       height: 40px;
     }
   }
+  .menu{
+    display: none;
+
+    ul{
+      margin: 0;
+    }
+  }
   .BurgerMenu {
     display: flex;
     height: 44px;
     width: 44px;
+    background: none;
     img{
       height: 44px;
       width: 44px;
@@ -2160,9 +2210,10 @@ footer {
   }
   header {
     height: 100px;
-    .menu {
-      display: none;
-    }
+  }
+
+  header .menu li:nth-child(4) {
+    margin-right: 13px;
   }
 
   .FirstContent {
@@ -2668,7 +2719,7 @@ footer {
       -webkit-text-fill-color: black;
       font-family: 'Montserrat';
     }
-    input[type="submit"] {
+    input[type="button"] {
       text-align: center;
       margin-bottom: 0;
       padding: 0;
@@ -2743,10 +2794,12 @@ footer {
   }
   header {
     height: 80px;
-    .menu {
-      display: none;
+    .showMenu{
+      top: 80px;
+      width: 40%;
     }
   }
+
 
   .FirstContent {
     display: flex;
@@ -3309,7 +3362,7 @@ footer {
       -webkit-text-fill-color: black;
       font-family: 'Montserrat';
     }
-    input[type="submit"] {
+    input[type="button"] {
       text-align: center;
       margin-bottom: 0;
       padding: 0;
@@ -3384,8 +3437,9 @@ footer {
   }
   header {
     height: 80px;
-    .menu {
-      display: none;
+    .showMenu{
+      top: 80px;
+      width: 50%;
     }
   }
   .FirstPart{
@@ -3953,7 +4007,7 @@ footer {
       -webkit-text-fill-color: black;
       font-family: 'Montserrat';
     }
-    input[type="submit"] {
+    input[type="button"] {
       text-align: center;
       margin-bottom: 0;
       padding: 0;
