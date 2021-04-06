@@ -995,7 +995,7 @@ footer {
   -webkit-text-fill-color: black;
   font-family: 'Montserrat';
 }
-.CheckContent input[type="button"] {
+.CheckContent input[type="submit"] {
   margin-bottom: 0;
   padding: 0;
   text-align: center;
@@ -1437,7 +1437,7 @@ header .showMenu .menu li:nth-child(4) {
     -webkit-text-fill-color: black;
     font-family: 'Montserrat';
   }
-  .CheckContent input[type="button"] {
+  .CheckContent input[type="submit"] {
     text-align: center;
     margin-bottom: 0;
     padding: 0;
@@ -1911,7 +1911,7 @@ header .showMenu .menu li:nth-child(4) {
     -webkit-text-fill-color: black;
     font-family: 'Montserrat';
   }
-  .CheckContent input[type="button"] {
+  .CheckContent input[type="submit"] {
     text-align: center;
     margin-bottom: 0;
     padding: 0;
@@ -2413,7 +2413,7 @@ header .showMenu .menu li:nth-child(4) {
     -webkit-text-fill-color: black;
     font-family: 'Montserrat';
   }
-  .CheckContent input[type="button"] {
+  .CheckContent input[type="submit"] {
     text-align: center;
     margin-bottom: 0;
     padding: 0;
@@ -3007,7 +3007,7 @@ header .showMenu .menu li:nth-child(4) {
     -webkit-text-fill-color: black;
     font-family: 'Montserrat';
   }
-  .CheckContent input[type="button"] {
+  .CheckContent input[type="submit"] {
     text-align: center;
     margin-bottom: 0;
     padding: 0;
@@ -3605,7 +3605,7 @@ header .showMenu .menu li:nth-child(4) {
     -webkit-text-fill-color: black;
     font-family: 'Montserrat';
   }
-  .CheckContent input[type="button"] {
+  .CheckContent input[type="submit"] {
     text-align: center;
     margin-bottom: 0;
     padding: 0;
